@@ -25,6 +25,7 @@
                 <div>gitlab.com/CuperCupu</div>
                 <div>bitbucket.org/CuperCupu</div>
             </div>
+            <div class="printonly">View this resume online at cupercupu.github.io</div>
         </div>
         <div class="content">
             <h2>Summary</h2>
@@ -221,7 +222,15 @@ p {
     font-size: 1.1rem;
 }
 
+.printonly {
+    display: none;
+}
+
 @media print {
+
+    .printonly {
+        display: block;
+    }
 
     .experience, .project, p {
         page-break-inside: avoid;
