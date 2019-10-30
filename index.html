@@ -19,7 +19,7 @@
                 <div>English - Fluent</div>
                 <div>Japanese - Elementary</div>
             </div>
-            <div class="links">
+            <div class="spaced">
                 <div>linkedin.com/in/suhendiandigo</div>
                 <div>github.com/CuperCupu</div>
                 <div>gitlab.com/CuperCupu</div>
@@ -30,16 +30,16 @@
             <h2>Summary</h2>
             <p>Experienced Software Engineer with in depth understanding of OOP implemented in C#, Java and Python 3. Experienced in setting up Continuous Integration with Jenkins and CircleCI. Highly interested in Code Cleanliness, Domain Driven Design, Event Driven Architecture, Distributed Computing and Microservices.</p>
             <hr/>
-            <h2>Education</h2>
             <div class="section" id="education">
+                <h2>Education</h2>
                 <div>
                     <h3>Bandung Institute of Technology</h3>
                     <p>Undergraduate, Informatics · (2016 - 2020)</p>
                 </div>
             </div>
             <hr/>
-            <h2>Experience</h2>
             <div class="section" id="experience">
+                <h2>Experience</h2>
                 <div class="experience">
                     <div class="company">PT Surya Teknologi Nasional</div>
                     <div class="title">Part-Time Software Engineer</div>
@@ -63,12 +63,12 @@
                 </div>
             </div>
             <hr/>
-            <h2>Projects</h2>
             <div class="section" id="projects">
+                <h2>Projects</h2>
                 <div class="project">
                     <div class="title">DSL For Component Based Microcontroller</div>
                     <div class="timespan">Aug 2019 – Present</div>
-                    <div class="description">A library created to boost productivity in creating a component based physical system. Uses a DSL to define instances of components that make up a system. A configuration file is generated separately with the use of this library. This library is implemented in Python 3.7 in which the components are also implemented in. This library support dependency injection by utilizing Python's type annotations to automatically inject loggers to a class, etc.</div>
+                    <div class="description">A library created to boost productivity in creating a component based physical system which support dependency injecting utilising Python's type annotations. Uses a DSL to define instances of components that make up a system. A configuration file is generated separately with the use of this library.</div>
                 </div>
                 <div class="project">
                     <div class="title">Ticket Dispenser Microcontroller</div>
@@ -181,10 +181,6 @@ p {
     margin-bottom: 1.5rem !important;
 }
 
-.links {
-    margin: 1rem 0;
-}
-
 .name {
     text-align: center;
 }
@@ -194,9 +190,9 @@ p {
     height: auto;
 }
 
-.section {
+.section > div {
     margin-left: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .experience, .project {
@@ -227,15 +223,12 @@ p {
 
 @media print {
 
-    .experience, p {
+    .experience, .project, p {
         page-break-inside: avoid;
     }
 
     .sidebar {
         box-shadow: none;
-    }
-
-    .sidebar {
         position: static;
         float: left;
     }
