@@ -8,15 +8,12 @@
             <div class="spacing"></div>
             <div class="profile-picture"><img src="profile.jpeg"/></div>
             <div>Suhendi</div>
-            <div><span id="age"></span> years old</div>
+            <div>Sr. Software Engineer and Tech Lead at Prosa.ai</div>
+            <div class="spaced"><span id="age"></span> years old</div>
             <div class="spaced">Bandung Area, West Java, Indonesia</div>
             <div class="spaced">
                 <div>suhendiandigo@gmail.com</div>
                 <div>+62 896-1620-3888</div>
-            </div>
-            <div class="spaced">
-                <div>Indonesian - Native</div>
-                <div>English - Fluent</div>
             </div>
             <div class="spaced">
                 <div>linkedin.com/in/suhendiandigo</div>
@@ -25,13 +22,19 @@
         </div>
         <div class="content">
             <h2>Summary</h2>
-            <p>Experienced Software Engineer with in depth understanding of OOP implemented in C#, Java and Python 3. Experienced in building common libraries, API services, writing unit tests and setting up CI. Focuses on writing clean and maintainable codes.</p>
+            <p class="description">Experienced Software Engineer with in depth understanding of OOP implemented in Python 3, Java and C#. Experienced in building common reuseable libraries, API services, writing unit tests and setting up CI. Focuses on writing clean and maintainable codes.</p>
             <hr/>
             <div class="section" id="education">
                 <h2>Education</h2>
                 <div>
                     <h3>Bandung Institute of Technology</h3>
                     <p>Undergraduate, Informatics · (2016 - 2020)</p>
+                    <h3>SMA Methodist-3 Medan</h3>
+                    <p>Senior Highschool · (2013 - 2016)</p>
+                    <h3>SMP Methodist-3 Medan</h3>
+                    <p>Junior Highschool · (2010 - 2013)</p>
+                    <h3>SD Methodist-3 Medan</h3>
+                    <p>Primary School · (2004 - 2010)</p>
                 </div>
             </div>
             <hr/>
@@ -43,7 +46,7 @@
                         <div class="title">Senior Software Engineer</div>
                         <div class="timespan">July 2021 - Present</div>
                         <div class="location">Bandung Area, West Java, Indonesia</div>
-                        <div class="description">Building and maintaining services around AI technologies. Collaborating with other Developers and Project Managers on building SaaS products as well as maintaining a B2B related software.</div>
+                        <div class="description">Building and maintaining services around AI technologies as Tech Lead for several products. Collaborating with other Developers and Project Managers on building SaaS products as well as maintaining a B2B related software. </div>
                     </div>
                     <div class="sub-experience">
                         <div class="title">Software Engineer</div>
@@ -72,6 +75,50 @@
                     <div class="timespan">September 2017 - August 2019 (2 years)</div>
                     <div class="location">Bandung Area, West Java, Indonesia</div>
                     <div class="description">Worked on several projects that are mainly focused on creating controllers for Barrier Gates and other similar hardwares that are integrated with the Information System that is currently being developed by PT Surya Teknologi Nasional for PT Pelabuhan Indonesia IV.</div>
+                </div>
+            </div>
+            <hr/>
+            <div class="section" id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill-level">Expert</div>
+                    <span class="skill">Python</span>
+                    <span class="skill">SQLAlchemy</span>
+                    <span class="skill">FastAPI</span>
+                    <span class="skill">Rest APIs</span>
+                </div>
+                <div class="skills">
+                    <div class="skill-level">Advanced</div>
+                    <span>Docker</span>
+                    <span>Kubernetes</span>
+                    <span>JWT</span>
+                    <span>OAuth</span>
+                    <span>Redis</span>
+                    <span>gRPC</span>
+                    <span>Sockets</span>
+                    <span>Websockets</span>
+                    <span>PostgreSQL</span>
+                    <span>Go</span>
+                    <span>Java</span>
+                    <span>C#</span>
+                </div>
+                <div class="skills">
+                    <div class="skill-level">Experienced</div>
+                    <span>Google Cloud Platform</span>
+                    <span>Amazon Web Services</span>
+                    <span>Serverless</span>
+                    <span>SQLite</span>
+                    <span>RabbitMQ</span>
+                    <span>Apache Kafka</span>
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <div class="skills">
+                    <div class="skill-level">Language</div>
+                    <span>Indonesian - Native</span>
+                    <span>English - Fluent</span>
                 </div>
             </div>
             <hr/>
@@ -197,7 +244,7 @@ p {
     margin-bottom: 1rem;
 }
 
-.experience, .project {
+.experience, .project, .skill {
     margin: 1rem 0.5rem;
 }
 
@@ -243,6 +290,24 @@ p {
 
 .project .description {
     margin: 0.3rem 0;
+}
+
+.description {
+    text-align: justify;
+}
+
+.skill-level {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.skills span {
+    margin: 0 0;
+    line-height: 2rem;
+    background: lightgray;
+    padding: 0.25rem 0.4rem;
+    border-radius: 0.5rem;
 }
 
 .printonly {
